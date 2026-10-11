@@ -1,0 +1,30 @@
+name: Car Dealership Capstone CI
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Django dependencies
+        run: pip install -r server/requirements.txt
+      - name: Django system check
+        run: python server/manage.py check
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Express dependencies
+        working-directory: express-api
+        run: npm install
+      - name: Run Express API smoke test
+        working-directory: express-api
+        run: npm test

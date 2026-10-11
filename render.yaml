@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: car-dealership-django
+    runtime: python
+    rootDir: server
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate
+    startCommand: gunicorn config.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: API_BASE_URL
+        value: https://YOUR-EXPRESS-API.onrender.com/api
+  - type: web
+    name: car-dealership-express-api
+    runtime: node
+    rootDir: express-api
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: MONGODB_URI
+        sync: false
