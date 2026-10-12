@@ -1,0 +1,27 @@
+﻿Command: curl.exe -i http://localhost:5000/api/dealers/state/Kansas
+
+Output:
+curl.exe :   % Total    % Received % Xferd  Average Speed   Time    Time     Time  
+Current
+At line:4 char:1
++ curl.exe -i $url 2>&1 | Out-File .\server\getdealersbyState -Append - ...
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  % Total    % ...  Time  Current:String)  
+   [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   490  100   490    0     0    98k      0 --:--:-- --:--:-- --:--:--  119k
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 490
+ETag: W/"1ea-9F7ICI9Ol1zuH1v/duopeCqekhQ"
+Date: Mon, 12 Oct 2026 17:31:05 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[{"id":1,"full_name":"Sunrise Auto Mall","city":"Wichita","state":"Kansas","address":"1200 Central Ave, Wichita, KS","phone":"316-555-0101","reviews":[{"id":101,"name":"Alex Morgan","purchase":"Sedan","review":"Fantastic services","rating":5}]},{"id":2,"full_name":"Prairie Motors","city":"Topeka","state":"Kansas","address":"88 Kansas Ave, Topeka, KS","phone":"785-555-0102","reviews":[{"id":102,"name":"Jamie Lee","purchase":"SUV","review":"Friendly team and great support","rating":5}]}]
