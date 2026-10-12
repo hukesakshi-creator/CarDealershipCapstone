@@ -1,0 +1,19 @@
+﻿Task 14: Get all car makes and models
+
+Command: curl.exe -i http://localhost:5000/api/car-makes
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 99
+
+[{"id":1,"name":"Toyota"},{"id":2,"name":"Honda"},{"id":3,"name":"Ford"},{"id":4,"name":"Hyundai"}]
+
+Command: curl.exe -i http://localhost:5000/api/car-models
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 185
+
+[{"id":1,"make_id":1,"name":"Camry"},{"id":2,"make_id":1,"name":"Corolla"},{"id":3,"make_id":2,"name":"Civic"},{"id":4,"make_id":3,"name":"Mustang"},{"id":5,"make_id":4,"name":"Creta"}]
