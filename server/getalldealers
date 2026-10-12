@@ -1,0 +1,5 @@
+cURL Command:
+curl.exe -X GET "http://localhost:5000/api/dealers"
+
+Output:
+[{"id":1,"full_name":"Sunrise Auto Mall","city":"Wichita","state":"Kansas","address":"1200 Central Ave, Wichita, KS","phone":"316-555-0101","reviews":[{"id":101,"name":"Alex Morgan","purchase":"Sedan","review":"Fantastic services","rating":5}]},{"id":2,"full_name":"Prairie Motors","city":"Topeka","state":"Kansas","address":"88 Kansas Ave, Topeka, KS","phone":"785-555-0102","reviews":[{"id":102,"name":"Jamie Lee","purchase":"SUV","review":"Friendly team and great support","rating":5}]},{"id":3,"full_name":"Metro Car House","city":"Pune","state":"Maharashtra","address":"Baner Road, Pune","phone":"+91-20-5550-0103","reviews":[]}]

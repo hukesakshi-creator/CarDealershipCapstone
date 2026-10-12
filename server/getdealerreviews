@@ -1,0 +1,5 @@
+cURL Command:
+curl.exe -X GET "http://localhost:5000/api/dealers/1/reviews"
+
+Output:
+[{"id":101,"name":"Alex Morgan","purchase":"Sedan","review":"Fantastic services","rating":5}]
