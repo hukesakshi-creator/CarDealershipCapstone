@@ -1,5 +1,13 @@
 # Car Dealership Application
+# fullstack_developer_capstone
 
+**Repository name:** `xrwvm-fullstack_developer_capstone`
+
+**Project name:** `fullstack_developer_capstone`
+
+## Project Description
+
+This project is a full-stack car dealership application developed as part of the Full Stack Developer Capstone. It includes a Django backend, a frontend interface, and API functionality for accessing dealership information.
 A learning capstone starter that combines a Django web application, React registration component, and Express REST API for car dealers, reviews, car makes/models, authentication demos, and sentiment analysis.
 
 ## Technology
