@@ -1,0 +1,27 @@
+﻿Command: curl.exe -i http://localhost:5000/api/dealers/1
+
+Output:
+curl.exe :   % Total    % Received % Xferd  Average Speed   Time    Time     Time  
+Current
+At line:3 char:1
++ curl.exe -i http://localhost:5000/api/dealers/1 2>&1 | Out-File .\Car ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  % Total    % ...  Time  Current:String)  
+   [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   243  100   243    0     0  52688      0 --:--:-- --:--:-- --:--:-- 60750
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 243
+ETag: W/"f3-eLiOVBTpmwxz47RG+qOZyBwmYP8"
+Date: Mon, 12 Oct 2026 17:28:32 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"id":1,"full_name":"Sunrise Auto Mall","city":"Wichita","state":"Kansas","address":"1200 Central Ave, Wichita, KS","phone":"316-555-0101","reviews":[{"id":101,"name":"Alex Morgan","purchase":"Sedan","review":"Fantastic services","rating":5}]}
